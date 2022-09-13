@@ -1,0 +1,10 @@
+div{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    color: white;
+    background-color: #297EFD;
+}
