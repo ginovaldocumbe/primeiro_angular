@@ -1,13 +1,13 @@
 <style></style>
-<h3>Teste </h3>
+<h3 *ngFor="let i of todosPaises"> {{i}}</h3>
 
 <section>
 <app-topo></app-topo>
 <app-filtro></app-filtro>
-<app-cards></app-cards>
+<app-cards ></app-cards>
 
 </section>
 <app-baixo></app-baixo>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+<router-outlet ></router-outlet>

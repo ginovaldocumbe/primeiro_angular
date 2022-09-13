@@ -8,14 +8,13 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  // @Paises  p = 
   url_paises: string = 'https://restcountries.com/v3.1/all';
   todosPaises = [];
 
+
   constructor(private http: HttpClient) {
     this.getPaises();
-    // alert(this.todosPaises[0].NomePais);
-    // inserirPaises(paises: any) {
-    //   for (let v = 0; v < todosPaises.lengt; v++) {}
   }
 
   getPaises() {
@@ -44,6 +43,8 @@ export class AppComponent {
           // ]);
           // console.log(this.todosPaises[0].name.common);
           // +' '+lista.continents+' '+lista.coatOfArms.png
+          this.todosPaises.push(lista.name.common,lista.continents,lista.coatOfArms.png)
+          // this.todosPaises = lista.name.common;
         });
       });
   }
