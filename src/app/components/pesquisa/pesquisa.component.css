@@ -9,7 +9,7 @@ div{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 5px 3px 10px #0000004e;
-    margin: 150px 0px 0px -230px;
+    margin: 150px 0px 0px -380px;
 }
 input{
     background-color: transparent !important;
@@ -17,4 +17,9 @@ input{
 }
 svg{
     color:#545454;
+}
+@media only screen and (min-width: 540px) {
+    div{
+        width: 350px;
+    }
 }

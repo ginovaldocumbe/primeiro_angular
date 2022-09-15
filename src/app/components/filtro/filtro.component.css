@@ -1,48 +1,59 @@
-section{
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.filt {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.continents {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+svg {
+  color: #5a5651;
+}
+.Number {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.Nr {
+  margin-left: 10px;
+}
+.paises {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+#TotalPaisesRegiao {
+  font-weight: 100;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #8c8c8c;
+}
+@media only screen and (min-width: 540px) {
+  section {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.filt{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    margin-bottom: 10px;
-}
-p{
-   font-size: 20px;
-   font-weight: bold;
-   margin: 0;
-}
-.continents{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 30px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-svg{
-    color: #5A5651;
-}
-.Number{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-.Nr{
-    margin-left: 10px;
-}
-.paises{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-#TotalPaisesRegiao{
-    font-weight: 100;
-    margin-left: 10px;
-    font-size: 15px;
-    color: #8C8C8C;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  .primeiro {
+    width: 400px;
+  }
 }
