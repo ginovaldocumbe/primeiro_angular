@@ -4,19 +4,9 @@
 <section>
 <app-topo></app-topo>
 <app-filtro></app-filtro>
-<!-- <app-cards [tes]="teste" *ngFor="let i of todosPaises" [test]="todosPaises[0]" >{{i}}</app-cards> -->
 <div class="cards">
-    <div class="card" *ngFor="let i of todosPaises">
-      <div class="imagem">
-      <img src="{{i.icone}}" class="img-fluid" alt="">
-    </div>
-      <div class="card-body">
-        <h5 class="card-title">Nome Comum: {{i.nome}}</h5>
-        <p class="card-text">{{i.continente}}</p>
-      </div>
-    </div>
-  </div>
-<!-- *ngFor="let i of todosPaises" >{{i}} -->
+<app-cards *ngFor="let i of todosPaises" [test]="i" ></app-cards>
+</div>
 </section>
 <app-baixo></app-baixo>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

@@ -7,7 +7,7 @@ import { Pais } from 'src/app/Pais';
 })
 export class CardsComponent implements OnInit {
   // @Input() tes: string = '';
-  // @Input() test: Pais;
+  @Input() test: Pais;
   constructor() {}
   ngOnInit(): void {}
 }
